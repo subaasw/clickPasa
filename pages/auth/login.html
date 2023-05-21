@@ -17,31 +17,55 @@
         <img id="logo" src="../../assets/logo.jpeg" alt="logo" />
         <form>
           <input
+            id="username"
             class="box"
             type="text"
             name="Username"
-            required
             placeholder="Your username"
           />
+          <span
+            align="'left"
+            style="
+              color: red;
+              font-size: 12px;
+              align-self: flex-start;
+              margin-bottom: 1rem;
+            "
+            id="error-username"
+          ></span>
 
           <input
+            id="password"
             class="box"
             type="password"
             name="Password"
-            required
             placeholder="Your Password"
           />
+          <span
+            align="'left"
+            style="
+              color: red;
+              font-size: 12px;
+              align-self: flex-start;
+              margin-bottom: 1rem;
+            "
+            id="error-passwd"
+          ></span>
 
-          <input class="button" type="submit" name="Login" value="Log In" />
+          <input
+            onclick="formValidation(event)"
+            class="button"
+            type="submit"
+            name="Login"
+            value="Log In"
+          />
           <div class="divider">
             <div class="line"></div>
             <p>OR</p>
             <div class="line"></div>
           </div>
-          <a class="gm" href="https://accounts.google.com/ServiceLogin"
-            >Log in with Gmail</a
-          >
-          <a class="fb" href="https://www.facebook.com">Log in with Facebook</a>
+          <a class="gm" href="#">Log in with Gmail</a>
+          <a class="fb" href="#">Log in with Facebook</a>
         </form>
       </div>
       <div class="panel signup">
@@ -50,5 +74,6 @@
         <p><a href="./signup.html"> Sign up</a></p>
       </div>
     </section>
+    <script src="/clickPasa/js/validate.js"></script>
   </body>
 </html>
